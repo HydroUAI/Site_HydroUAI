@@ -5,20 +5,15 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Mail, Phone, MapPin, Clock, Users, MessageSquare } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8">
+  return <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Fale Conosco
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Entre em contato conosco para colaborações, parcerias, oportunidades de pesquisa 
-            ou qualquer dúvida sobre nossos projetos e publicações.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">v</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -173,11 +168,7 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <Label htmlFor="message">Mensagem</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Descreva sua solicitação ou dúvida em detalhes..." 
-                      rows={6}
-                    />
+                    <Textarea id="message" placeholder="Descreva sua solicitação ou dúvida em detalhes..." rows={6} />
                   </div>
 
                   <Button className="w-full bg-primary hover:bg-primary-dark">
@@ -211,8 +202,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
