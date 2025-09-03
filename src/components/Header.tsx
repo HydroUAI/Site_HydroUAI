@@ -32,7 +32,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
               <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center transition-smooth hover:scale-105">
-                <span className="text-primary-foreground font-bold text-sm">GP</span>
+                <span className="text-primary-foreground font-bold text-sm">H-AI</span>
               </div>
             </Link>
             <Link to="/" className="ml-3 text-xl font-semibold text-foreground hover:text-primary transition-smooth">Hydro-UAI
