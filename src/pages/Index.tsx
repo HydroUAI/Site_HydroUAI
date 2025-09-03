@@ -16,11 +16,11 @@ const Index = () => {
         ></div>
         <div className="relative max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Inovação em Pesquisa Científica
+            Hydro-UAI
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Desenvolvemos pesquisas de excelência que contribuem para o avanço do conhecimento 
-            e soluções inovadoras para os desafios da sociedade moderna.
+            Integrando hidráulica, hidrologia e inteligência artificial para revolucionar 
+            a gestão de recursos hídricos e enfrentar os desafios da água no século XXI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
@@ -38,11 +38,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Nosso Grupo de Pesquisa
+              Hydro-UAI Research Group
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Comprometidos com a excelência acadêmica e o desenvolvimento de soluções inovadoras 
-              que impactam positivamente a sociedade através da pesquisa científica de qualidade.
+              Pioneiros na aplicação de inteligência artificial para resolver problemas complexos em 
+              hidráulica e hidrologia, desenvolvendo soluções inteligentes para a gestão sustentável da água.
             </p>
           </div>
 
@@ -52,11 +52,11 @@ const Index = () => {
                 <div className="mx-auto w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle>Equipe Especializada</CardTitle>
+                <CardTitle>Expertise Multidisciplinar</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Pesquisadores qualificados e estudantes dedicados trabalhando em projetos de ponta
+                  Especialistas em hidráulica, hidrologia e IA trabalhando em soluções inovadoras para recursos hídricos
                 </CardDescription>
               </CardContent>
             </Card>
@@ -66,11 +66,11 @@ const Index = () => {
                 <div className="mx-auto w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
                   <Target className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle>Projetos Inovadores</CardTitle>
+                <CardTitle>IA para Recursos Hídricos</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Desenvolvimento de soluções tecnológicas e metodologias avançadas de pesquisa
+                  Modelos preditivos e algoritmos de ML para otimização de sistemas hidráulicos e hidrológicos
                 </CardDescription>
               </CardContent>
             </Card>
@@ -80,11 +80,11 @@ const Index = () => {
                 <div className="mx-auto w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
                   <BookOpen className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle>Publicações de Impacto</CardTitle>
+                <CardTitle>Pesquisa de Impacto</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Artigos em periódicos renomados e apresentações em conferências internacionais
+                  Publicações em revistas de hidráulica, hidrologia e inteligência artificial de alto impacto
                 </CardDescription>
               </CardContent>
             </Card>
@@ -94,11 +94,11 @@ const Index = () => {
                 <div className="mx-auto w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
                   <Award className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle>Reconhecimento</CardTitle>
+                <CardTitle>Inovação Reconhecida</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Prêmios e reconhecimentos pela qualidade e relevância de nossas pesquisas
+                  Pioneirismo na integração de IA com ciências hídricas reconhecido pela comunidade científica
                 </CardDescription>
               </CardContent>
             </Card>

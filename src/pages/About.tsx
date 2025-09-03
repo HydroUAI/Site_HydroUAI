@@ -5,32 +5,32 @@ import { Users, GraduationCap, Calendar, MapPin, Target } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "Dr. Maria Silva",
-      role: "Coordenadora do Grupo",
-      description: "Doutora em Ciência da Computação com especialização em IA",
-      image: "MS"
+      name: "Dr. Carlos Aguiar",
+      role: "Coordenador - Hidráulica & IA", 
+      description: "Doutor em Engenharia Hidráulica com especialização em Machine Learning",
+      image: "CA"
     },
     {
-      name: "Dr. João Santos",
-      role: "Pesquisador Sênior",
-      description: "PhD em Engenharia de Software e Machine Learning",
-      image: "JS"
+      name: "Dra. Marina Fluvial",
+      role: "Pesquisadora Sênior - Hidrologia",
+      description: "PhD em Hidrologia com foco em modelagem preditiva",
+      image: "MF"
     },
     {
-      name: "Dr. Ana Costa",
-      role: "Pesquisadora",
-      description: "Especialista em Análise de Dados e Estatística",
-      image: "AC"
+      name: "Dr. Alex Neural",
+      role: "Especialista em IA",
+      description: "Doutor em Inteligência Artificial aplicada a sistemas hídricos",
+      image: "AN"
     }
   ];
 
   const areas = [
-    "Inteligência Artificial",
-    "Machine Learning",
-    "Análise de Dados",
-    "Engenharia de Software",
-    "Computação Científica",
-    "Sistemas Distribuídos"
+    "Machine Learning para Hidrologia",
+    "Modelagem Hidráulica Inteligente", 
+    "Previsão de Enchentes com IA",
+    "Otimização de Redes de Água",
+    "Sensores Inteligentes para Água",
+    "Deep Learning para Recursos Hídricos"
   ];
 
   return (
@@ -39,11 +39,11 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Quem Somos
+            Sobre o Hydro-UAI
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Conheça nossa história, missão e a equipe dedicada que torna possível 
-            o desenvolvimento de pesquisas de excelência.
+            Conheça nossa história, missão e a equipe multidisciplinar que integra 
+            hidráulica, hidrologia e inteligência artificial.
           </p>
         </div>
 
@@ -58,9 +58,9 @@ const About = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                Desenvolver pesquisa científica de excelência que contribua para o avanço 
-                do conhecimento em nossa área de atuação, formando recursos humanos qualificados 
-                e transferindo conhecimento para a sociedade através de soluções inovadoras.
+                Desenvolver soluções inteligentes e sustentáveis para a gestão de recursos hídricos, 
+                integrando conhecimento em hidráulica, hidrologia e inteligência artificial para 
+                enfrentar os desafios da água no século XXI.
               </p>
             </CardContent>
           </Card>
@@ -74,9 +74,9 @@ const About = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                Ser reconhecido como um grupo de pesquisa de referência nacional e internacional, 
-                contribuindo significativamente para o desenvolvimento científico e tecnológico, 
-                e formando pesquisadores de excelência.
+                Ser reconhecido como o principal centro de pesquisa em aplicações de IA 
+                para ciências hídricas, liderando a inovação na gestão inteligente da água 
+                e formando especialistas na área.
               </p>
             </CardContent>
           </Card>

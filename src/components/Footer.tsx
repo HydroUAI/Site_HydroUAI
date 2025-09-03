@@ -47,8 +47,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4">Sobre o Grupo</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Grupo de pesquisa dedicado ao avanço do conhecimento científico e desenvolvimento 
-              de soluções inovadoras em nossa área de atuação.
+              Hydro-UAI integra hidráulica, hidrologia e inteligência artificial para revolucionar 
+              a gestão sustentável de recursos hídricos.
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © {new Date().getFullYear()} Grupo de Pesquisa. Todos os direitos reservados.
+              © {new Date().getFullYear()} Hydro-UAI Research Group. Todos os direitos reservados.
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-muted-foreground text-sm">
