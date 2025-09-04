@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoImage from "/lovable-uploads/49f669bd-73ea-40bd-bf7a-51d554e173b9.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -31,9 +32,7 @@ const Header = () => {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center transition-smooth hover:scale-105">
-                <span className="text-primary-foreground font-bold text-sm">H-AI</span>
-              </div>
+              <img src={logoImage} alt="Hydro-UAI Logo" className="h-10 w-10 transition-smooth hover:scale-105" />
             </Link>
             <Link to="/" className="ml-3 text-xl font-semibold text-foreground hover:text-primary transition-smooth">Hydro-UAI
           </Link>
