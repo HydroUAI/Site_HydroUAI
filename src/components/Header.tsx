@@ -2,27 +2,31 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import logoImage from "/lovable-uploads/49f669bd-73ea-40bd-bf7a-51d554e173b9.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
+  
   const navigation = [{
-    name: "Início",
+    name: t('nav.home'),
     href: "/"
   }, {
-    name: "Quem Somos",
+    name: t('nav.about'),
     href: "/about"
   }, {
-    name: "Projetos",
+    name: t('nav.projects'),
     href: "/projects"
   }, {
-    name: "Publicações",
+    name: t('nav.publications'),
     href: "/publications"
   }, {
-    name: "Downloads",
+    name: t('nav.downloads'),
     href: "/downloads"
   }, {
-    name: "Fale Conosco",
+    name: t('nav.contact'),
     href: "/contact"
   }];
   const isActive = (path: string) => location.pathname === path;
@@ -39,12 +43,13 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden md:flex items-center gap-6">
+            <div className="flex items-baseline space-x-8">
               {navigation.map(item => <Link key={item.name} to={item.href} className={`px-3 py-2 rounded-md text-sm font-medium transition-smooth ${isActive(item.href) ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground hover:bg-secondary"}`}>
                   {item.name}
                 </Link>)}
             </div>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button */}
@@ -61,6 +66,9 @@ const Header = () => {
               {navigation.map(item => <Link key={item.name} to={item.href} className={`block px-3 py-2 rounded-md text-base font-medium transition-smooth ${isActive(item.href) ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground hover:bg-secondary"}`} onClick={() => setIsMenuOpen(false)}>
                   {item.name}
                 </Link>)}
+              <div className="px-3 py-2">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>}
       </nav>

@@ -1,69 +1,41 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+  
   return (
-    <footer className="bg-secondary border-t border-border mt-auto">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Contato</h3>
-            <div className="space-y-3">
-              <div className="flex items-center text-muted-foreground">
-                <Mail className="h-4 w-4 mr-3" />
-                <span>grupo@universidade.edu.br</span>
-              </div>
-              <div className="flex items-center text-muted-foreground">
-                <Phone className="h-4 w-4 mr-3" />
-                <span>+55 (11) 99999-9999</span>
-              </div>
-              <div className="flex items-center text-muted-foreground">
-                <MapPin className="h-4 w-4 mr-3" />
-                <span>Universidade, Campus - Cidade, Estado</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Links Rápidos</h3>
-            <div className="space-y-2">
-              <a href="/about" className="block text-muted-foreground hover:text-primary transition-smooth">
-                Quem Somos
-              </a>
-              <a href="/projects" className="block text-muted-foreground hover:text-primary transition-smooth">
-                Projetos
-              </a>
-              <a href="/publications" className="block text-muted-foreground hover:text-primary transition-smooth">
-                Publicações
-              </a>
-              <a href="/downloads" className="block text-muted-foreground hover:text-primary transition-smooth">
-                Downloads
-              </a>
-            </div>
-          </div>
-
-          {/* About */}
-          <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Sobre o Grupo</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Hydro-UAI integra hidráulica, hidrologia e inteligência artificial para revolucionar 
-              a gestão sustentável de recursos hídricos.
+    <footer className="bg-primary text-primary-foreground">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="col-span-1 md:col-span-2">
+            <h3 className="text-2xl font-bold mb-4">Hydro-UAI</h3>
+            <p className="text-primary-foreground/80 mb-4 max-w-md">
+              {t('footer.description')}
             </p>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
+            <ul className="space-y-2">
+              <li><a href="/about" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">{t('nav.about')}</a></li>
+              <li><a href="/projects" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">{t('nav.projects')}</a></li>
+              <li><a href="/publications" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">{t('nav.publications')}</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.research')}</h4>
+            <ul className="space-y-2">
+              <li><a href="/downloads" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">{t('nav.downloads')}</a></li>
+              <li><a href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">{t('footer.contact')}</a></li>
+            </ul>
           </div>
         </div>
-
-        <div className="mt-8 pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground text-sm">
-              © {new Date().getFullYear()} Hydro-UAI Research Group. Todos os direitos reservados.
-            </p>
-            <div className="mt-4 md:mt-0">
-              <p className="text-muted-foreground text-sm">
-                Desenvolvido com ❤️ para a comunidade acadêmica
-              </p>
-            </div>
-          </div>
+        
+        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
+          <p className="text-primary-foreground/60">
+            © 2024 Hydro-UAI Research Group. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

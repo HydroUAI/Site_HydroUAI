@@ -2,9 +2,11 @@ import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const NotFound = () => {
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     console.error(
@@ -19,10 +21,10 @@ const NotFound = () => {
         <div className="mb-8">
           <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
           <h2 className="text-2xl font-semibold text-foreground mb-2">
-            Página não encontrada
+            {t('notFound.title')}
           </h2>
           <p className="text-muted-foreground mb-8">
-            A página que você está procurando não existe ou foi movida.
+            {t('notFound.description')}
           </p>
         </div>
         
@@ -30,12 +32,12 @@ const NotFound = () => {
           <Button asChild className="bg-primary hover:bg-primary-dark">
             <Link to="/">
               <Home className="w-4 h-4 mr-2" />
-              Voltar ao Início
+              {t('notFound.backHome')}
             </Link>
           </Button>
           <Button variant="outline" onClick={() => window.history.back()}>
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Página Anterior
+            {t('notFound.backPrevious')}
           </Button>
         </div>
       </div>
