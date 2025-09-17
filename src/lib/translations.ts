@@ -43,7 +43,7 @@ export const translations = {
         }
       },
       cta: {
-        title: "Junte-se à Nossa Pesquisa",
+        title: "Junte-se ao nosso Grupo de Pesquisa",
         description: "Interessado em colaborar ou saber mais sobre nossos projetos? Entre em contato conosco.",
         contact: "Entre em Contato"
       }
@@ -177,7 +177,7 @@ export const translations = {
         }
       },
       cta: {
-        title: "Join Our Research",
+        title: "Join Our Research Group",
         description: "Interested in collaborating or learning more about our projects? Contact us.",
         contact: "Contact Us"
       }
