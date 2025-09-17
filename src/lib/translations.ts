@@ -16,7 +16,7 @@ export const translations = {
     },
     home: {
       hero: {
-        title: "Hydro-UAI",
+        title: "HYDRO-UAI",
         subtitle: "Integrando Hidráulica, Hidrologia e Inteligência Artificial para o Futuro da Gestão de Recursos Hídricos",
         description: "Desenvolvemos soluções inovadoras através da integração de conhecimento em hidráulica, hidrologia e inteligência artificial para enfrentar os desafios contemporâneos da gestão de recursos hídricos.",
         viewProjects: "Ver Projetos",
@@ -150,7 +150,7 @@ export const translations = {
     },
     home: {
       hero: {
-        title: "Hydro-UAI",
+        title: "HYDRO-UAI",
         subtitle: "Integrating Hydraulics, Hydrology and Artificial Intelligence for the Future of Water Resources Management",
         description: "We develop innovative solutions through the integration of knowledge in hydraulics, hydrology and artificial intelligence to face contemporary challenges in water resources management.",
         viewProjects: "View Projects",
