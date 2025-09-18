@@ -24,7 +24,7 @@ export const translations = {
       },
       overview: {
         title: "Hydro-UAI Research Group",
-        description: "Nosso grupo de pesquisa combina expertise em hidráulica, hidrologia e inteligência artificial para desenvolver soluções inovadoras para os desafios contemporâneos da gestão de recursos hídricos. Focamos em pesquisa aplicada que gera impacto real na sociedade.",
+        description: "Nosso grupo de pesquisa combina expertise em hidráulica, hidrologia e inteligência artificial para desenvolver soluções inovadoras para os desafios contemporâneos da gestão de recursos hídricos. Trabalhamos também para clientes da área de mineração, energia, drenagem urbana e defesa civil. Focamos em pesquisa aplicada que gera impacto real na sociedade.",
         expertise: {
           title: "Expertise Multidisciplinar",
           description: "Combinamos conhecimento profundo em hidráulica, hidrologia e IA para criar soluções integradas e inovadoras."
@@ -158,7 +158,7 @@ export const translations = {
       },
       overview: {
         title: "Hydro-UAI Research Group",
-        description: "Our research group combines expertise in hydraulics, hydrology and artificial intelligence to develop innovative solutions for contemporary water resources management challenges. We focus on applied research that generates real impact on society.",
+        description: "Our research group combines expertise in hydraulics, hydrology and artificial intelligence to develop innovative solutions for contemporary water resources management challenges. We also work for clients in the areas of mining, energy, urban drainage and civil defense. We focus on applied research that generates real impact on society.",
         expertise: {
           title: "Multidisciplinary Expertise",
           description: "We combine deep knowledge in hydraulics, hydrology and AI to create integrated and innovative solutions."
