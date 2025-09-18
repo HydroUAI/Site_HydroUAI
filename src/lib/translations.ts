@@ -73,7 +73,7 @@ export const translations = {
       team: {
         title: "Nossa Equipe",
         coordinator: {
-          name: "Dr. João Silva",
+          name: "Dr. Bruno Brentan",
           role: "Coordenador do Grupo",
           description: "Especialista em hidráulica computacional e inteligência artificial aplicada a recursos hídricos."
         },
