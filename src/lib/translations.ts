@@ -78,17 +78,17 @@ export const translations = {
           description: "Especialista em hidráulica computacional e inteligência artificial aplicada a recursos hídricos."
         },
         researcher1: {
-          name: "Dra. Maria Santos",
+          name: "Dr. Gustavo Meirelles",
           role: "Pesquisadora Sênior",
           description: "Especialista em hidrologia e modelagem matemática de sistemas hídricos."
         },
         researcher2: {
-          name: "Dr. Pedro Costa",
+          name: "Dr. Andre Ferreira",
           role: "Pesquisador",
           description: "Especialista em machine learning e otimização de sistemas hídricos."
         },
         student1: {
-          name: "Ana Oliveira",
+          name: "Msc Rodrigo Perdigao",
           role: "Doutoranda",
           description: "Pesquisa em deep learning para predição de vazões."
         },
