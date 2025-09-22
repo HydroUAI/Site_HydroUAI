@@ -18,42 +18,147 @@ const About = () => {
     t('about.research.sustainability')
   ];
 
-  const teamMembers = [
+  const coordenacao = [
     {
-      name: t('about.team.coordinator.name'),
-      role: t('about.team.coordinator.role'),
-      description: t('about.team.coordinator.description'),
-      initials: "JS"
+      name: "Dr. Bruno Melo Brentan",
+      description: "Especialista em Hidroinformática, com experiência em análise de sistemas de abastecimento de água. Aplica IA e otimização em diversos sistemas de recursos hídricos",
+      initials: "BB"
     },
     {
-      name: t('about.team.researcher1.name'),
-      role: t('about.team.researcher1.role'),
-      description: t('about.team.researcher1.description'),
-      initials: "MS"
+      name: "Dr. Gustavo Meirelles Lima", 
+      description: "Otimização e modelagem hidráulica em sistemas de abastecimento de água e usinas hidrelétricas",
+      initials: "GM"
     },
     {
-      name: t('about.team.researcher2.name'),
-      role: t('about.team.researcher2.role'),
-      description: t('about.team.researcher2.description'),
+      name: "Dr. André Ferreira Rodrigues",
+      description: "Doutor em Recursos Hídricos com atuação em hidrologia, modelagem de eventos extremos e aplicação de IA em hidrologia",
+      initials: "AR"
+    },
+    {
+      name: "MSc. Rodrigo Perdigão Gomes Bezerra",
+      description: "Sistemas de previsão de inundação com utilização de redes neurais e modelagem hidrodinâmica de rápido processamento",
+      initials: "RP"
+    }
+  ];
+
+  const hidrologia = [
+    {
+      name: "David Jimenez Osorio",
+      description: "Especialista em modelagem hidrológica em contextos de mudanças climáticas e modelagem hidrodinâmica",
+      initials: "DJ"
+    },
+    {
+      name: "Ernesto José Garcia Canellas",
+      description: "Graduando em Engenharia Ambiental com iniciação científica em modelagem hidrológica aplicada no Rio Grande do Sul",
+      initials: "EC"
+    },
+    {
+      name: "Gabriela Modesto Azevedo",
+      description: "Modelagem hidrológica com uso de redes neurais aplicada à bacia do Rio Negro, na Amazônia",
+      initials: "GA"
+    },
+    {
+      name: "Isabela Zini de Oliveira",
+      description: "Pesquisa científica focada em sistemas de previsão de inundação com utilização de redes neurais",
+      initials: "IO"
+    },
+    {
+      name: "Júlia Camarano Lüdtke",
+      description: "Estudos de extremos hidrológicos na bacia do Rio Madeira, com ênfase na ocorrência de secas",
+      initials: "JL"
+    },
+    {
+      name: "Lorena Grochowski Sabino dos Santos",
+      description: "Iniciação científica na área de hidrogeologia",
+      initials: "LS"
+    },
+    {
+      name: "Marina Marcela de Paula Kolanski",
+      description: "Engenheira ambiental, mestranda pelo programa SMARH da UFMG, com foco em eventos extremos e modelagem hidrológica",
+      initials: "MK"
+    },
+    {
+      name: "Taís Fonte Boa de Campos Maia",
+      description: "Engenheira ambiental, mestranda em hidrologia com ênfase em IA e aprendizado de máquina para modelagem hidrológica",
+      initials: "TM"
+    }
+  ];
+
+  const hidraulica = [
+    {
+      name: "Daniel Bezerra Barros",
+      description: "Modelagem computacional de redes de distribuição de água, detecção e localização de anomalias e vazamentos",
+      initials: "DB"
+    },
+    {
+      name: "Débora Salomé Móller",
+      description: "Modelagem hidráulica de redes e adutoras de água, otimização no dimensionamento de sistemas de abastecimento",
+      initials: "DM"
+    },
+    {
+      name: "Filipe Augusto Resende Mota",
+      description: "Pesquisa em transitórios hidráulicos e detecção de vazamentos",
+      initials: "FM"
+    },
+    {
+      name: "Henrique Di Bernardo Dantas",
+      description: "Graduando em Engenharia Civil, iniciação científica em hidráulica de sistemas de abastecimento de água",
+      initials: "HD"
+    },
+    {
+      name: "Jéssica Soares Pereira Gonçalves",
+      description: "Graduanda em Engenharia Ambiental com iniciação científica em hidráulica de sistemas de abastecimento",
+      initials: "JG"
+    },
+    {
+      name: "Jordana Madeira Alaggio Ribeiro",
+      description: "Pesquisa em modelagem hidráulica com ênfase em métodos computacionais e técnicas de IA",
+      initials: "JR"
+    },
+    {
+      name: "Leandro Alves Evangelista",
+      description: "Modelagem hidráulica e otimização de sistemas de abastecimento de água",
+      initials: "LE"
+    },
+    {
+      name: "Marina Vilaça Mendonça",
+      description: "Graduanda em Engenharia Ambiental, iniciação científica em sistemas de abastecimento de água e hidráulica",
+      initials: "MV"
+    },
+    {
+      name: "Pedro Orsini Cotta",
+      description: "Graduando em Engenharia Civil, pesquisa aplicação de IA em redes de distribuição para detecção de vazamentos",
       initials: "PC"
     },
     {
-      name: t('about.team.student1.name'),
-      role: t('about.team.student1.role'),
-      description: t('about.team.student1.description'),
-      initials: "AO"
+      name: "Pedro Vasconcellos Diaz",
+      description: "Graduando em Engenharia Civil, iniciação científica em monitoramento de redes de distribuição com IA",
+      initials: "PD"
     },
     {
-      name: t('about.team.student2.name'),
-      role: t('about.team.student2.role'),
-      description: t('about.team.student2.description'),
-      initials: "CL"
+      name: "Rafael Barreto Ferreira",
+      description: "Pesquisa no uso de machine learning para previsão de estado de funcionamento de redes de abastecimento",
+      initials: "RF"
     },
     {
-      name: t('about.team.student3.name'),
-      role: t('about.team.student3.role'),
-      description: t('about.team.student3.description'),
-      initials: "JF"
+      name: "Rui Gabriel Modesto de Souza",
+      description: "Otimização e modelagem hidráulica em sistemas de abastecimento de água",
+      initials: "RG"
+    },
+    {
+      name: "Talles Luca Silva Matos",
+      description: "Pesquisador em Engenharia Civil, iniciação científica aplicando IA e técnicas de otimização em redes de água",
+      initials: "TL"
+    },
+    {
+      name: "Thiago Henrique da Silva Lima",
+      description: "Estudante de Engenharia Civil, pesquisa aplicação de IA e ML para previsão de inundações",
+      initials: "TH"
+    },
+    {
+      name: "Thomaz Felipe de Freitas Anchieta",
+      description: "Otimização e modelagem matemático-computacional de redes de distribuição de água",
+      initials: "TF"
     }
   ];
 
@@ -115,22 +220,68 @@ const About = () => {
           {/* Team */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center text-primary mb-12">{t('about.team.title')}</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => (
-                <Card key={index} className="shadow-elegant border-0 hover:shadow-lg transition-smooth">
-                  <CardContent className="p-6 text-center">
-                    <Avatar className="w-20 h-20 mx-auto mb-4">
-                      <AvatarImage src="" />
-                      <AvatarFallback className="bg-primary text-primary-foreground text-lg font-semibold">
-                        {member.initials}
-                      </AvatarFallback>
-                    </Avatar>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{member.name}</h3>
-                    <p className="text-primary font-medium mb-3">{member.role}</p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{member.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+            
+            {/* Coordenação */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Coordenação</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {coordenacao.map((member, index) => (
+                  <Card key={index} className="shadow-elegant border-0 hover:shadow-lg transition-smooth">
+                    <CardContent className="p-6 text-center">
+                      <Avatar className="w-16 h-16 mx-auto mb-4">
+                        <AvatarImage src="" />
+                        <AvatarFallback className="bg-primary text-primary-foreground text-sm font-semibold">
+                          {member.initials}
+                        </AvatarFallback>
+                      </Avatar>
+                      <h4 className="text-lg font-semibold text-foreground mb-2">{member.name}</h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{member.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Hidrologia */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Hidrologia</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {hidrologia.map((member, index) => (
+                  <Card key={index} className="shadow-elegant border-0 hover:shadow-lg transition-smooth">
+                    <CardContent className="p-5 text-center">
+                      <Avatar className="w-14 h-14 mx-auto mb-3">
+                        <AvatarImage src="" />
+                        <AvatarFallback className="bg-secondary text-secondary-foreground text-sm font-semibold">
+                          {member.initials}
+                        </AvatarFallback>
+                      </Avatar>
+                      <h4 className="text-base font-semibold text-foreground mb-2">{member.name}</h4>
+                      <p className="text-muted-foreground text-xs leading-relaxed">{member.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Hidráulica */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold text-primary mb-8 text-center">Hidráulica</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {hidraulica.map((member, index) => (
+                  <Card key={index} className="shadow-elegant border-0 hover:shadow-lg transition-smooth">
+                    <CardContent className="p-5 text-center">
+                      <Avatar className="w-14 h-14 mx-auto mb-3">
+                        <AvatarImage src="" />
+                        <AvatarFallback className="bg-accent text-accent-foreground text-sm font-semibold">
+                          {member.initials}
+                        </AvatarFallback>
+                      </Avatar>
+                      <h4 className="text-base font-semibold text-foreground mb-2">{member.name}</h4>
+                      <p className="text-muted-foreground text-xs leading-relaxed">{member.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
 
