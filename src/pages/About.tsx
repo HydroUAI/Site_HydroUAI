@@ -20,22 +20,22 @@ const About = () => {
 
   const coordenacao = [
     {
-      name: "Dr. Bruno Melo Brentan",
+      name: "Bruno Melo Brentan",
       description: "Especialista em Hidroinformática, com experiência em análise de sistemas de abastecimento de água. Aplica IA e otimização em diversos sistemas de recursos hídricos",
       initials: "BB"
     },
     {
-      name: "Dr. Gustavo Meirelles Lima", 
+      name: "Gustavo Meirelles Lima", 
       description: "Otimização e modelagem hidráulica em sistemas de abastecimento de água e usinas hidrelétricas",
       initials: "GM"
     },
     {
-      name: "Dr. André Ferreira Rodrigues",
+      name: "André Ferreira Rodrigues",
       description: "Doutor em Recursos Hídricos com atuação em hidrologia, modelagem de eventos extremos e aplicação de IA em hidrologia",
       initials: "AR"
     },
     {
-      name: "MSc. Rodrigo Perdigão Gomes Bezerra",
+      name: "Rodrigo Perdigão Gomes Bezerra",
       description: "Sistemas de previsão de inundação com utilização de redes neurais e modelagem hidrodinâmica de rápido processamento",
       initials: "RP"
     }
