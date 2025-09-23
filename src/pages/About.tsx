@@ -3,6 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Users, BookOpen, GraduationCap, Calendar } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import brunoImg from "@/assets/team/bruno.jpeg";
+import andreImg from "@/assets/team/andre.jpeg";
+import rodrigoImg from "@/assets/team/rodrigo.jpeg";
+import gustavoImg from "@/assets/team/gustavo.jpeg";
 
 const About = () => {
   const { t } = useLanguage();
@@ -22,22 +26,26 @@ const About = () => {
     {
       name: "Bruno Melo Brentan",
       description: "Especialista em Hidroinformática, com experiência em análise de sistemas de abastecimento de água. Aplica IA e otimização em diversos sistemas de recursos hídricos",
-      initials: "BB"
+      initials: "BB",
+      image: brunoImg
     },
     {
       name: "Gustavo Meirelles Lima", 
       description: "Otimização e modelagem hidráulica em sistemas de abastecimento de água e usinas hidrelétricas",
-      initials: "GM"
+      initials: "GM",
+      image: gustavoImg
     },
     {
       name: "André Ferreira Rodrigues",
       description: "Doutor em Recursos Hídricos com atuação em hidrologia, modelagem de eventos extremos e aplicação de IA em hidrologia",
-      initials: "AR"
+      initials: "AR",
+      image: andreImg
     },
     {
       name: "Rodrigo Perdigão Gomes Bezerra",
       description: "Sistemas de previsão de inundação com utilização de redes neurais e modelagem hidrodinâmica de rápido processamento",
-      initials: "RP"
+      initials: "RP",
+      image: rodrigoImg
     }
   ];
 
@@ -228,12 +236,12 @@ const About = () => {
                 {coordenacao.map((member, index) => (
                   <Card key={index} className="shadow-elegant border-0 hover:shadow-lg transition-smooth">
                     <CardContent className="p-6 text-center">
-                      <Avatar className="w-16 h-16 mx-auto mb-4">
-                        <AvatarImage src="" />
-                        <AvatarFallback className="bg-primary text-primary-foreground text-sm font-semibold">
-                          {member.initials}
-                        </AvatarFallback>
-                      </Avatar>
+                       <Avatar className="w-16 h-16 mx-auto mb-4">
+                         <AvatarImage src={member.image} />
+                         <AvatarFallback className="bg-primary text-primary-foreground text-sm font-semibold">
+                           {member.initials}
+                         </AvatarFallback>
+                       </Avatar>
                       <h4 className="text-lg font-semibold text-foreground mb-2">{member.name}</h4>
                       <p className="text-muted-foreground text-sm leading-relaxed">{member.description}</p>
                     </CardContent>
